@@ -7,6 +7,10 @@ p {
     margin: 30px;
 }
 
+h1 {
+    margin-top: 20px;
+}
+
 h1, h2, button {
     font-family: 'Urbanist', sans-serif;
 }
@@ -70,8 +74,6 @@ button {
     text-align: center;
 }
 
-
-
 button:hover {
     background-color: cadetblue;
     transition: 0.7s;
@@ -82,7 +84,7 @@ button:active {
 }
 
 footer {
-    background-color: black;
+    background-color: rgb(216, 165, 173);
 }
 
 p.footer {
@@ -91,4 +93,20 @@ p.footer {
 
 ul.footer {
     padding: 20px;
+}
+
+.extra-space {
+    margin-bottom: 50px;
+}
+
+nav.background-color {
+    background-color:rgb(216, 165, 173);
+}
+
+.pb-margint {
+    margin-top: 100px;
+}
+
+.pb-marginb {
+    margin-bottom: 100px;
 }

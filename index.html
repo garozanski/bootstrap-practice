@@ -3,85 +3,174 @@
 
     <head>
         <title>Travel Photographer</title>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        
         <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
     </head>
     <body>
         <header>
-            <nav>
-                <div>
-                    
-                    <ul class="flex">
-                    <li><a href="#" id="menu-icon">Logo</a></li>
-                      <li><a href="index.html" class="current">Home</a></li>
-                      <li><a href="portfolio.html">Portfolio</a></li>
-                      <li><a href="#">Contact</a></li>
-                      <li><a href="about.html">About Me</a></li>
-                      <input type="text" placeholder="Search..">
-                    <img src="pics/Search-icon.png" width="15" alt="search icon">
-                    <a href="#">Sign In</a>
-                    <a href="#">View Cart</a>
-                <img src="http://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg" width="20" alt="shopping cart icon">
-                    </ul>
-
+            <nav class="navbar fixed-top background-color">
+                <div class="container-fluid">
+                  <a id="menu-icon" class="navbar-brand" href="index.html">Logo</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Travel Photographer</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active text-decoration" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-decoration" href="about.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration" href="portfolio.html">Portfolio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-decoration" href="portfolio.html">Blog</a>
+                          </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Start Shopping
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-decoration" href="#">Sign In</a></li>
+                            <li><a class="dropdown-item text-decoration" href="#">Create an Account</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-decoration" href="#">Your Cart</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
                 </div>
-            </nav>
+              </nav>
 
         </header>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="pics/tvlp 3.jpg" class="d-block w-100" alt="cityscape and birds">
+              </div>
+              <div class="carousel-item">
+                <img src="pics/tvlp 3.jpg" class="d-block w-100" alt="cityscape and birds">
+              </div>
+              <div class="carousel-item">
+                <img src="pics/tvlp 3.jpg" class="d-block w-100" alt="cityscape and birds">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+          <h1 class="google-font-text w3-animate-fading">Travel Photographer</h1>
 
         <div>
-        <img class="bp" src="pics/tvlp 3.jpg" alt="cityscape and birds">
-        <h1 class="google-font-text w3-animate-fading">Travel Photographer</h1>
-        </div>
-
-        <div>
-        <h2>What is a travel photographer?</h2>
-        <p>A travel photographer is a professional who works in various industries, photographically capturing different geographic locations, cultures and customs. They may work locally or globally, providing photographic services for organizations or individuals1. Travel photography is primarily about photographing places in all their glory. As a travel photographer, you will travel to lots of places and capture them through your camera. The places can be tourist attractions, natural landscapes, hotels and resorts, cultural experiences, and outdoor adventures2.</p>
-        <p>There are many beautiful places around the world that are perfect for travel photography. Some of the best places to travel for photography include:</p>
-
-            <ul>
-                <li>The Lake District, England</li>
-                <li>Grand Canyon, USA</li>
-                <li>Provence, France</li>
-                <li>Tenerife, Canary Islands</li>
-                <li>Tanzania, Africa</li>
-                <li>Maldives</li>
-                <li>Kefalonia, Greece</li>
-                <li>Kyoto, Japan</li>
-            </ul>
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    <h2>What is a travel photographer?</h2>
+                    <p>A travel photographer is a professional who works in various industries, photographically capturing different geographic locations, cultures and customs. They may work locally or globally, providing photographic services for organizations or individuals1. Travel photography is primarily about photographing places in all their glory. As a travel photographer, you will travel to lots of places and capture them through your camera. The places can be tourist attractions, natural landscapes, hotels and resorts, cultural experiences, and outdoor adventures2.</p>
+                    <p>There are many beautiful places around the world that are perfect for travel photography. Some of the best places to travel for photography include:</p>
             
-        <p>These places offer a variety of attractions such as crystal-clear oceans, breathtaking vistas, hiking adventures, safaris and so much more and cater to a variety of interests, budgets and activity levels.</p>
-        <p>If you’re looking for more inspiration on travel photography destinations, you can check out this list of 24 destinations that will ignite your love of photography.</p>
-            <div class="btn-container-div"><button class="btn">MORE INFO</button></div>
-    
+                        <ul>
+                            <li>The Lake District, England</li>
+                            <li>Grand Canyon, USA</li>
+                            <li>Provence, France</li>
+                            <li>Tenerife, Canary Islands</li>
+                            <li>Tanzania, Africa</li>
+                            <li>Maldives</li>
+                            <li>Kefalonia, Greece</li>
+                            <li>Kyoto, Japan</li>
+                        </ul>
+                        
+                    <p>These places offer a variety of attractions such as crystal-clear oceans, breathtaking vistas, hiking adventures, safaris and so much more and cater to a variety of interests, budgets and activity levels.</p>
+                    <p>If you’re looking for more inspiration on travel photography destinations, you can check out this list of 24 destinations that will ignite your love of photography.</p>
+                        <div class="btn-container-div extra-space"><button type="button btn-color" class="btn btn-outline-info">More Info</button></div>
+                </div>
+                <div class="col-4">
+                    <h2>Travel Photography Equipment</h2>
+                    <p>If you’re looking to get started with travel photography, there are a few essential pieces of equipment that you’ll need:</p>
+                        <ul>
+                            <li>Main Camera</li>
+                            <li>Lenses</li>
+                            <li>Action Camera</li>
+                            <li>Tripod</li>
+                            <li>Camera bag/backpack</li>
+                            <li>Lens cleaning kit</li>
+                        </ul>
+                        <p>If you’re looking to get started with travel photography, there are a few essential pieces of equipment that you’ll need:</p>
+                        <ul>
+                            <li>Main Camera</li>
+                            <li>Lenses</li>
+                            <li>Action Camera</li>
+                            <li>Tripod</li>
+                            <li>Camera bag/backpack</li>
+                            <li>Lens cleaning kit</li>
+                        </ul>
+                        <p>If you’re looking to get started with travel photography, there are a few essential pieces of equipment that you’ll need:</p>
+                        <ul>
+                            <li>Main Camera</li>
+                            <li>Lenses</li>
+                            <li>Action Camera</li>
+                            <li>Tripod</li>
+                            <li>Camera bag/backpack</li>
+                            <li>Lens cleaning kit</li>
+                        </ul>
+                        
+                    <div class="btn-container-div"><button type="button" class="btn btn-outline-info">Shop Here</button></div>
+                    
+                </div>
+              </div>
+
     </div></div>
 
-        <h2>Travel Photography Equipment</h2>
-        <p>If you’re looking to get started with travel photography, there are a few essential pieces of equipment that you’ll need:</p>
-            <ul>
-                <li>Main Camera</li>
-                <li>Lenses</li>
-                <li>Action Camera</li>
-                <li>Tripod</li>
-                <li>Camera bag/backpack</li>
-                <li>Lens cleaning kit</li>
-            </ul>
-        <div class="btn-container-div"><button class="btn">SHOP HERE</button></div>
+        
         <footer>
             <div>
-                    
-                <ul class="flex footer">
-                  <li><a href="index.html" class="current">Home</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="about.html">About Me</a></li>
-                </ul>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link active text-decoration" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-decoration" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-decoration" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-decoration">About Me</a>
+                    </li>
+                  </ul> 
 
             </div>
             <p class="footer">Copyright © 2023 Example Company</p>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     </body>
 
 </html>
